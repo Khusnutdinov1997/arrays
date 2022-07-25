@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //Задача
+        // Задача
         int[] arr = new int[3];
         arr[0] = 1;
         arr[1] = 2;
@@ -26,7 +26,7 @@ public class Main {
             System.out.println("");
 
 
-            //Задача
+            // Задача
             double[] mass = {1.57, 9.986, 7.654};
             for (int i = 0; i < mass.length; i++) {
                 if (i == mass.length - 1) {
@@ -45,7 +45,7 @@ public class Main {
             }
             System.out.println("");
 
-            //Задача
+            // Задача
             int[] arbitrary = {15, 26, 65, 98};
             for (int i = 0; i < arbitrary.length; i++) {
                 if (i == arbitrary.length - 1) {
@@ -87,7 +87,7 @@ public class Main {
           }
         }
         System.out.println("");
-
+        // Задача 4
         int [] even = {1,2,3};
         for (int i = 0; i < even.length; i++) {
             if (even[i] % 2 != 0){
