@@ -5,8 +5,8 @@ public class Main {
         arr[0] = 1;
         arr[1] = 2;
         arr[2] = 3;
-        for (int i = 0; i < 3; i++) {
-            if (i == 3 - 1) {
+        for (int i = 0; i < arr.length ; i++) {
+            if (i == arr.length - 1) {
                 System.out.print(arr[i]);
             } else {
                 System.out.print(arr[i] + ", ");
@@ -15,7 +15,7 @@ public class Main {
         }
 
         System.out.println("");
-        for (int i = 2; i >= 0; i--) {
+        for (int i = arr.length-1; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(arr[i] + ", ");
             } else {
@@ -35,7 +35,6 @@ public class Main {
                     System.out.print(mass[i] + ", ");
                 }
             }
-        System.out.println("");
             for (int i = mass.length -1; i>=0; i--) {
              if (i != 0 ) {
                  System.out.print(mass[i] + ", ");
@@ -71,15 +70,15 @@ public class Main {
             arbitrary2[3] = 584.25;
             arbitrary2[4] = 21.254;
             arbitrary2[5] = 12.257;
-            for (int i = 0; i < 6; i++) {
-                if (i == 6 - 1) {
+            for (int i = 0; i < arbitrary2.length; i++) {
+                if (i == arbitrary2.length - 1) {
                     System.out.print(arbitrary2[i]);
                 } else {
                     System.out.print(arbitrary2[i] + ", ");
                 }
             }
         System.out.println("");
-        for (int i = 5; i >=0 ; i--) {
+        for (int i = arbitrary2.length-1; i >=0 ; i--) {
           if(i!=0) {
               System.out.print(arbitrary2[i] + ", ");
           }else {
@@ -90,16 +89,14 @@ public class Main {
         // Задача 4
         int [] even = {1,2,3};
         for (int i = 0; i < even.length; i++) {
-            if (even[i] % 2 != 0){
+            if (even[i] % 2 != 0 || i == even.length - 1) {
                 even[i]++;
-                if (i == even.length - 1) {
-                    System.out.print(even[i]);
-                } else {
-                    System.out.print(even[i] + ", ");
+                System.out.print(even[i] + ", ");
+                }
                 }
             }
         }
-        }
-        }
+
+
 
 
